@@ -15,6 +15,7 @@ isroutine(obj):
 im = cat.sayHiif inspect.isroutine(im):
     im() 
 对于实现了__call__的类实例，这个方法会返回False。如果目的是只要可以直接调用就需要是True的话，不妨使用isinstance(obj, collections.Callable)这种形式。我也不知道为什么Callable会在collections模块中，抱歉！我大概是因为collections模块中包含了很多其他的ABC(Abstract Base Class)的缘故吧：）
+　　
 　　3.2. 获取对象信息
 
 getmembers(object[, predicate]): 
